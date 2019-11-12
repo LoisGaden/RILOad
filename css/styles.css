@@ -1,0 +1,22 @@
+.red{
+  color: red;
+}
+ /* .=class, #=ID, h1->targets all h1s, or html etc */
+.btn-container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.welcome-btn {
+  padding: 10px 30px;
+  border-radius: 5px;
+  border: none;
+  font-size: 26px;
+  text-transform: uppercase;
+  color: #000000;
+  background-color: #ffffff;
+  font-weight: bold;
+}
