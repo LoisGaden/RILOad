@@ -31,7 +31,7 @@ div.homepage {
 
 .recipe-image {
   height: 400px;
-  width: 950px;
+  width: 1200px;
 }
 
 .food-carousel{
@@ -45,7 +45,7 @@ div.homepage {
 }
 
 .carousel .carousel-item{
-  height: 500px;
+  height: 100px;
   width: 500px;
 }
 
