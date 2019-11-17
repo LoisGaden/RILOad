@@ -2,6 +2,7 @@
   color: red;
 }
  /* .=class, #=ID, h1->targets all h1s, or html etc */
+
 .btn-container {
   height: 100%;
   display: flex;
@@ -24,10 +25,10 @@
   font-weight: bold;
 }
 
-div.homepage {
+/* div.homepage {
   /* background-color: green; */
-  /* background-image: radial-gradient(#009933, #b3ffcc); */
-}
+  /* background-image: radial-gradient(#009933, #b3ffcc);
+} */
 
 .recipe-image {
   height: 400px;
@@ -49,13 +50,14 @@ div.homepage {
   width: 500px;
 }
 
-/* .some-font{
-  font: Arial; Could be wrong
-} */
-
 .carousel-item img {
     position: absolute;
     top: 0;
     left: 0;
     min-height: 300px;
+}
+
+.homepage-image {
+  height: 800px;
+  width: 1456px;
 }
