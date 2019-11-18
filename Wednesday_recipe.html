@@ -2,7 +2,12 @@
 <html>
 
 <head>
-
+  <link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Patrick+Hand&display=swap" rel="stylesheet">
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script src="vendor/jquery-validation/dist/jquery.validate.min.js"></script>
   <link rel="stylesheet" type="text/css" href="css/styles.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
@@ -43,7 +48,9 @@
         <img src="./Hero-meatballs.jpg" alt="A local image" class="recipe-image">
       </div>
       <div class="row">
-        <h2><em>Ingredients</em></h2>
+        <h2>Ingredients</h2>
+
+<div class="maintext">
         <ul>
           <li>Oil</li>
           <li>Onion</li>
@@ -54,7 +61,7 @@
           <li>Pasta of your choice</li>
         </ul>
         <div>
-          <h2><em>Method</em></h2>
+          <h2>Method</h2>
           <p>Preheat the oven to 180 C ready for the Lindas.</p>
 
 
@@ -63,7 +70,7 @@
               Add the onion and cook for around 5 minutes.</p>
 
 
-          <p><strong>TOP TIP:</strong> if the onion looks like it's burning add a splash of water to the pan, this stops them burning and helps them to soften.
+          <p>TOP TIP: if the onion looks like it's burning add a splash of water to the pan, this stops them burning and helps them to soften.
               Add the garlic and cook for another 2 minutes.</p>
               <!--  add a callout (css to make it red??)- -->
           <p>Add half a tin of chopped tomatoes (you can save the other half for <a href="./Monday_recipe.html">chickpea baked eggs</a> or <a href="./Thursday_recipe.html">chilli sin carne</a> recipes).
@@ -76,14 +83,22 @@
           <p>Drain the pasta when it's done. Take your Lindas out of the oven and cut them into chunks.
             Add the sausage chunks to your tomato sauce and salt and pepper to taste.</p>
         </div>
-        <form>
-          <div class="form-group">
-            <label for="exampleInputEmail1"><strong>Enter your email address to receive our latest recipes</strong></label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-            <small id="emailHelp" class="form-text text-muted"><em>We'll never share your email with anyone else.</em></small>
-          </div>
-        </form>  
-      </div>
+
+      <div>
+      <form name="emailForm">
+        <div class="form-group">
+          <label for="firstname">First Name</label>
+          <input type="text" name="firstname" id="firstname" placeholder="Enter First Name"/>
+          <label for="lastname">Last Name</label>
+          <input type="text" name="lastname" id="lastname" placeholder="Enter Last Name"/>
+          <label for="exampleInputEmail1">Enter your email address to receive our latest recipes:</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+          <small id="emailHelp" class="form-text text-muted"><em>We'll never share your email with anyone else.</em></small>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+</div>
 </body>
 
 </html>

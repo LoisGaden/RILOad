@@ -2,7 +2,12 @@
 <html>
 
 <head>
-
+  <link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Patrick+Hand&display=swap" rel="stylesheet">
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script src="vendor/jquery-validation/dist/jquery.validate.min.js"></script>
   <link rel="stylesheet" type="text/css" href="css/styles.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
@@ -42,7 +47,9 @@
       <img src="./Hero-stirfry.jpg" alt="A local image" class="recipe-image">
     </div>
     <div class="row">
-      <h2><em>Ingredients</em></h2>
+      <h2>Ingredients</h2>
+
+  <div class="maintext">
       <ul>
         <li>Sesame oil</li>
         <li>Garlic</li>
@@ -55,7 +62,7 @@
         <li>Soy sauce</li>
       </ul>
       <div>
-        <h2><em>Method</em></h2>
+        <h2>Method</h2>
         <p>Chop all your veg into smaller chunks and dice the garlic up small.</p>
 
         <p>Add a glug of oil to the pan and add your garlic. Next add your peppers and carrot.
@@ -68,13 +75,21 @@
         <p>When the noodles are done, drain them and add them to the vegetables with a touch more oil.
           Fry for few more minutes and voila!</p>
       </div>
-      <form>
-        <div class="form-group">
-          <label for="exampleInputEmail1"><strong>Enter your email address to receive our latest recipes</strong></label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-          <small id="emailHelp" class="form-text text-muted"><em>We'll never share your email with anyone else.</em></small>
-        </div>
-      </form>  
-  </div>
+
+<div>
+  <form name="emailForm">
+    <div class="form-group">
+      <label for="firstname">First Name</label>
+      <input type="text" name="firstname" id="firstname" placeholder="Enter First Name"/>
+      <label for="lastname">Last Name</label>
+      <input type="text" name="lastname" id="lastname" placeholder="Enter Last Name"/>
+      <label for="exampleInputEmail1">Enter your email address to receive our latest recipes:</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+      <small id="emailHelp" class="form-text text-muted"><em>We'll never share your email with anyone else.</em></small>
+    </div>
+    <button type="submit">Submit</button>
+  </form>
+</div>
+</div>
 </body>
 </html>
